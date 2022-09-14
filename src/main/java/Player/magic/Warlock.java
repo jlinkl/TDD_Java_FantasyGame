@@ -1,10 +1,11 @@
 package Player.magic;
 
 import Player.ArmourType;
+import Player.IPlayer;
 import Player.magic.creature.Creature;
 import Player.magic.spell.Spell;
 
-public class Warlock extends Magic{
+public class Warlock extends Magic {
     public Warlock(String name, ArmourType armourType, Spell spell, Creature creature, int mana, int health) {
         super(name, armourType, spell, creature, mana, health);
     }

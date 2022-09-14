@@ -1,5 +1,6 @@
 package Room.enemy.enemies;
 
+import Player.IAttacker;
 import Player.melee.weapon.Weapon;
 import Room.enemy.EnemyRoom;
 
@@ -22,8 +23,8 @@ public class Enemy {
         return health;
     }
 
-    public void takeDamage(Weapon weapon, EnemyRoom enemyRoom) {
-        this.health -= weapon.getWeaponType().getDamageValue();
+    public void takeDamage(int damage, EnemyRoom enemyRoom) {
+        this.health -= damage;
         if(this.health <= 0){
             this.checkIfDead(enemyRoom);
         }

@@ -13,4 +13,12 @@ public enum SpellType {
         this.damageValue = damageValue;
         this.manaCost = manaCost;
     }
+
+    public int getDamageValue() {
+        return damageValue;
+    }
+
+    public int getManaCost() {
+        return manaCost;
+    }
 }

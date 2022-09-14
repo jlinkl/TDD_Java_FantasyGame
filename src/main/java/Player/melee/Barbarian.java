@@ -1,6 +1,7 @@
 package Player.melee;
 
 import Player.ArmourType;
+import Player.IPlayer;
 import Player.melee.weapon.Weapon;
 
 public class Barbarian extends Warrior{

@@ -2,6 +2,7 @@ package Player.healer;
 
 import Player.ArmourType;
 import Player.Character;
+import Player.IPlayer;
 import Player.healer.item.Item;
 
 public class Cleric extends Character {

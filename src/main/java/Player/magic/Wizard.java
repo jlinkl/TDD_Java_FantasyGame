@@ -1,6 +1,7 @@
 package Player.magic;
 
 import Player.ArmourType;
+import Player.IPlayer;
 import Player.magic.creature.Creature;
 import Player.magic.spell.Spell;
 

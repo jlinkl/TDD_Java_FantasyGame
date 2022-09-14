@@ -2,10 +2,13 @@ package Player.melee;
 
 import Player.ArmourType;
 import Player.Character;
+import Player.IAttacker;
+import Player.IPlayer;
 import Player.melee.weapon.Weapon;
+import Room.enemy.EnemyRoom;
 import Room.enemy.enemies.Enemy;
 
-public class Warrior extends Character {
+public class Warrior extends Character implements IAttacker {
     private Weapon weapon;
 
     public Warrior(String name, ArmourType armourType, Weapon weapon, int health) {
@@ -17,9 +20,8 @@ public class Warrior extends Character {
         this.weapon = weapon;
     }
 
-    public void attackEnemy(Enemy enemy) {
-
+    public void dealDamage(Enemy enemy, EnemyRoom enemyRoom) {
+        enemy.takeDamage(this.weapon.getWeaponType().getDamageValue(), enemyRoom);
     }
-
 
 }
