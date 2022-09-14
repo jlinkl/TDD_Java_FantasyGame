@@ -30,6 +30,10 @@ public abstract class Character implements IPlayer {
         }
     }
 
+    public int getHealth() {
+        return this.health;
+    }
+
     public int getMoney() {
         return money;
     }

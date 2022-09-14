@@ -26,6 +26,7 @@ public class TreasureRoom {
         for (Treasure treasure: treasures) {
             player.addMoney(treasure);
         }
+        treasures.clear();
     }
 }
 

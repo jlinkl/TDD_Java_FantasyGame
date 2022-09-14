@@ -31,7 +31,7 @@ public class EnemyTest {
     @Test
     public void canTakeDamage(){
         enemyRoom.addEnemy(enemy);
-        enemy.takeDamage(weapon, enemyRoom);
+        enemy.takeDamage(weapon.getWeaponType().getDamageValue(), enemyRoom);
         assertEquals(193, enemy.getHealth());
 
     }
@@ -39,7 +39,7 @@ public class EnemyTest {
     @Test
     public void enemyCanDie(){
         enemyRoom.addEnemy(enemy);
-        enemy.takeDamage(weapon2, enemyRoom);
+        enemy.takeDamage(weapon2.getWeaponType().getDamageValue(), enemyRoom);
         assertEquals(0, enemyRoom.getEnemies().size());
         assertEquals("Enemy is Dead!", enemy.checkIfDead(enemyRoom));
     }
