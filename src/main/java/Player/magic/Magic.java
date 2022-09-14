@@ -10,8 +10,8 @@ public class Magic extends Character {
     private Creature creature;
     private int mana;
 
-    public Magic(String name, ArmourType armourType, Spell spell, Creature creature, int mana) {
-        super(name, armourType);
+    public Magic(String name, ArmourType armourType, Spell spell, Creature creature, int mana, int health) {
+        super(name, armourType, health);
         this.spell = spell;
         this.creature = creature;
         this.mana = mana;

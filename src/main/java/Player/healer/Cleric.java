@@ -7,8 +7,8 @@ import Player.healer.item.Item;
 public class Cleric extends Character {
     private Item item;
 
-    public Cleric(String name, ArmourType armourType, Item item) {
-        super(name, armourType);
+    public Cleric(String name, ArmourType armourType, Item item, int health) {
+        super(name, armourType, health);
         this.item = item;
     }
 

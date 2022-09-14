@@ -7,8 +7,8 @@ import Player.melee.weapon.Weapon;
 public class Warrior extends Character {
     private Weapon weapon;
 
-    public Warrior(String name, ArmourType armourType, Weapon weapon) {
-        super(name, armourType);
+    public Warrior(String name, ArmourType armourType, Weapon weapon, int health) {
+        super(name, armourType, health);
         this.weapon = weapon;
     }
 
