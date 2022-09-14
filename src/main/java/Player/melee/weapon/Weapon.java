@@ -6,4 +6,8 @@ public class Weapon {
     public Weapon(WeaponType weaponType) {
         this.weaponType = weaponType;
     }
+
+    public WeaponType getWeaponType() {
+        return weaponType;
+    }
 }

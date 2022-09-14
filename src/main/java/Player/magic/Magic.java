@@ -18,10 +18,11 @@ public class Magic extends Character {
     }
 
     public void changeSpell(Spell spell) {
-
+        this.spell = spell;
     }
 
     public void changeCreature(Creature creature) {
+        this.creature = creature;
 
     }
 }

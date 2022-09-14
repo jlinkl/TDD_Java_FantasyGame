@@ -5,8 +5,17 @@ public enum WeaponType {
     AXE(7),
     HAMMER(10),
     GREATSWORD(12),
-    MACE(8);
+    MACE(8),
+    DEATHSWORD(200);
 
-    WeaponType(int damgeValue) {
+    private int damageValue;
+
+    WeaponType(int damageValue) {
+        this.damageValue = damageValue;
+
+    }
+
+    public int getDamageValue() {
+        return damageValue;
     }
 }

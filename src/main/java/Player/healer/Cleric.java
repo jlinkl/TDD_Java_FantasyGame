@@ -13,6 +13,6 @@ public class Cleric extends Character {
     }
 
     public void changeItem(Item item) {
-
+        this.item = item;
     }
 }

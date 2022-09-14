@@ -5,6 +5,15 @@ public enum TreasureType {
     DIAMOND(200),
     RUBBISH(0);
 
+
+    private int treasureValue;
+
     TreasureType(int treasureValue) {
+        this.treasureValue = treasureValue;
+
+    }
+
+    public int getTreasureValue() {
+        return treasureValue;
     }
 }
